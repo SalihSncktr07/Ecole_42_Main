@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: spirnaz <spirnaz@student.42kocaeli.com.    +#+  +:+       +#+        */
+/*   By: spirnaz <spirnaz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 15:19:25 by spirnaz           #+#    #+#             */
-/*   Updated: 2022/12/19 15:21:29 by spirnaz          ###   ########.fr       */
+/*   Updated: 2022/12/20 20:42:01 by spirnaz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,27 +34,24 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (begin);
 }
 
-// #include <stdio.h>
-
-// void    del(void *content)
-// {
-//    	free(content);
-// }
-
-// void *ft_change(void *content)
-// {
-// 	((char *)content)[0] -= 32;
-// 	return(content);
-// }
-
-// int main()
-// {
-// 	t_list *node1,*node2;
-// 	t_list *tmp;
-// 	node1 = ft_lstnew(ft_strdup("sami"));
-// 	node2 = ft_lstnew(ft_strdup("kocaeli"));
-// 	ft_lstadd_back(&node1, node2);
-// 	tmp = ft_lstmap(node1, ft_change, del);
-// 	printf("**%s**", (char *)tmp->content);
-// 	printf("%s", (char *)tmp->next->content);
-// }
+/* #include <stdio.h>
+void    del(void *content)
+{
+   	free(content);
+}
+void *ft_change(void *content)
+{
+	((char *)content)[0] -= 32;
+	return(content);
+}
+int main()
+{
+	t_list *node1,*node2;
+	t_list *tmp;
+	node1 = ft_lstnew(ft_strdup("salih"));
+	node2 = ft_lstnew(ft_strdup("kocaeli"));
+	ft_lstadd_back(&node1, node2);
+	tmp = ft_lstmap(node1, ft_change, del);
+	printf("**%s**\n", (char *)tmp->content);
+	printf("%s\n", (char *)tmp->next->content);
+} */
