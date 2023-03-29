@@ -14,7 +14,7 @@ int main(int ac, char **av)
                 i++;
             write(1, &av[1][i++], 1);
             if(av[1][i] == ' ')
-                write(1, " ", 1);
+                write(1, "   ", 3);
             while(av[1][i] == ' ')
                 i++;
         }
